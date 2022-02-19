@@ -1,0 +1,46 @@
+/** @format */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  --button-background-color: #e8604c;
+  --button-background-color-hover: #ffffff;
+  --button-color: #ffffff;
+  --button-color-hover: #000000;
+  --animation-duration: 1s;
+}
+
+body {
+  height: 100vh;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+
+.btn {
+  width: 150px;
+  height: 60px;
+  border: none;
+  font-size: 1.5rem;
+  text-decoration: none;
+  cursor: pointer;
+  color: var(--button-color);
+  background-image: linear-gradient(
+    var(--button-background-color) 50%,
+    var(--button-background-color-hover) 50%
+  );
+  text-align: center;
+  background-size: 100% 200%;
+  background-position: 100% 0%;
+  transition: var(--animation-duration) all ease;
+}
+.btn:hover {
+  color: var(--button-color-hover);
+  background-position: 0% 100%;
+}
